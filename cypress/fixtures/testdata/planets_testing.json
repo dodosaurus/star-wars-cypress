@@ -1,0 +1,5 @@
+[
+  { "planetIndex": 1, "expectedPlanetName": "Tatooine" },
+  { "planetIndex": 2, "expectedPlanetName": "Alderaan" },
+  { "planetIndex": 3, "expectedPlanetName": "Yavin IV" }
+]

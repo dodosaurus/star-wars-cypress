@@ -1,0 +1,16 @@
+{
+  "name": "star-wars-cypress",
+  "version": "1.0.0",
+  "description": "Project to try out API testing with Cypress",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "cypress": "^8.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:dev": "cypress open configFile=\"dev\""
+  },
+  "author": "",
+  "license": "ISC"
+}
