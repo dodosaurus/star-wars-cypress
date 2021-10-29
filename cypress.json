@@ -1,5 +1,7 @@
 {
     "baseUrl": "https://google.com",
     "video": false,
-    "integrationFolder": "cypress/tests"
+    "integrationFolder": "cypress/tests",
+    "viewportWidth": 1080,
+    "viewportHeight": 1080
 }

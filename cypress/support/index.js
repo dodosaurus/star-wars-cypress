@@ -15,6 +15,7 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
+import '@bahmutov/cy-api/support'
 
 before(() => {
     cy.log(`Running tests on environment: ${Cypress.env('id')}` )

@@ -3,8 +3,10 @@
 describe("People API", () => {
   
   context("POSITIVE CASES", () => {
-    it("get all the people", () => {
-      cy.request("people").should((response) => {
+    it.only("get all the people", () => {
+      cy.api({
+        url: "people"
+      }, "[SW-API] Get all the people").should((response) => {
         expect(response.status).to.eq(200);
         expect(response).to.have.property("headers");
         expect(response).to.have.property("duration");
