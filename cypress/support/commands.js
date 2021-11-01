@@ -24,4 +24,27 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
-Cypress.Commands.add('api', (email, password) => { ... })
+Cypress.Commands.add("api", ({ ...options }) => {
+  //creating the custom report window
+  const doc = cy.state("document");
+  const win = cy.state("window");
+  let container = doc.querySelector(".container");
+  if (!container) {
+    container = doc.createElement("div");
+    container.className = "container";
+    doc.body.appendChild(container);
+  }
+
+  //cy.request
+  cy.request({ ...options }).then(object => {
+    options.map(returnedField => {
+        container.innerHTML +=
+    '<div class="cy-api">\n' +
+    '<div>\n' +
+    `<b>${returnedField}</b>\n` +
+    '<pre class="cy-api-pre">' +
+    returnedField +
+    '\n</pre></div>'
+    })
+  });
+});
