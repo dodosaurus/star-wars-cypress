@@ -1,5 +1,3 @@
-/// <reference types="cypress" />
-
 describe("Planets API", () => {
   const data = require("../../fixtures/testdata/planets_testing.json");
 

@@ -1,13 +1,6 @@
-/// <reference types="cypress" />
-
 describe("People API", () => {
   it("get all the people", () => {
-    cy.api(
-      {
-        url: "people",
-      },
-      "[SW-API] Get all the people"
-    ).should((response) => {
+    cy.api("people").should((response) => {
       expect(response.status).to.eq(200);
       expect(response).to.have.property("headers");
       expect(response).to.have.property("duration");
