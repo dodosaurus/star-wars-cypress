@@ -1,6 +1,0 @@
-{
-  "baseUrl": "https://swapi.dev/api",
-  "env": {
-    "id": "DEV"
-  }
-}
