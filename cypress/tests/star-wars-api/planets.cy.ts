@@ -8,7 +8,7 @@ describe("Planets API", () => {
         expect(response).to.have.property("headers");
         expect(response).to.have.property("duration");
         expect(response.body).to.deep.contain({
-          name: `${item.expectedPlanetName}`,
+          name: item.expectedPlanetName,
         });
       });
     });
