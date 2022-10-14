@@ -14,7 +14,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "cy:open": "cypress open --e2e --browser edge",
     "cy:allure": "npx cypress run --env allure=true",
-    "allure:serve": "cd .\\allure\\ && allure serve --clean",
+    "allure:serve": "cd .\\allure\\ && allure serve",
     "allure:gen": "cd .\\allure\\ && allure generate --clean"
   },
   "author": "",
