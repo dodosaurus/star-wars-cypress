@@ -1,4 +1,4 @@
-This is experimental Cypress API project to test out what is possible.
+This is experimental Cypress API project to test out various npm packages/reporters/new practices.
 
 ### What this project should contain
 
