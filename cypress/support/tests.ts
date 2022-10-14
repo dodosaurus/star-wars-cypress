@@ -14,9 +14,22 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
-import './commands'
-import 'cypress-plugin-api'
-import '@shelex/cypress-allure-plugin'
+import "./commands";
+import "cypress-plugin-api";
+import "@shelex/cypress-allure-plugin";
+import "cy-spok"
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+
+declare global {
+  namespace Cypress {
+    interface Chainable {
+      /**
+       * Custom command to GET /root.
+       * @example cy.getRoot()
+       */
+      getRoot(): Chainable<Request>;
+    }
+  }
+}
