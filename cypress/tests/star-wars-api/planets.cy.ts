@@ -1,5 +1,5 @@
 describe("Planets API", () => {
-  const data = require("../../fixtures/testdata/planets_testing.json");
+  const data = require("../../fixtures/planets_testing.json");
 
   data.forEach((item) => {
     it("Testing planet with index: " + item.planetIndex, () => {
