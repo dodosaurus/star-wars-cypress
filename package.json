@@ -4,13 +4,17 @@
   "description": "Project to try out API testing with Cypress",
   "main": "index.js",
   "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.33.0",
     "cypress": "^10.10.0",
     "cypress-plugin-api": "^1.3.0",
     "typescript": "^4.8.4"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cy:open": "cypress open"
+    "cy:open": "cypress open",
+    "cy:allure": "npx cypress run --env allure=true",
+    "allure:serve": "cd .\\allure\\ && allure serve --clean",
+    "allure:gen": "cd .\\allure\\ && allure generate --clean"
   },
   "author": "",
   "license": "ISC"
