@@ -3,8 +3,8 @@ import allureWriter from "@shelex/cypress-allure-plugin/writer";
 
 module.exports = defineConfig({
   video: false,
-  viewportWidth: 1080,
   viewportHeight: 1080,
+  viewportWidth: 1920,
   e2e: {
     setupNodeEvents(on, config) {
       allureWriter(on, config);
@@ -15,6 +15,6 @@ module.exports = defineConfig({
     specPattern: "cypress/tests/**/*.cy.{js,jsx,ts,tsx}",
   },
   env: {
-    allureResultsPath: "allure/allure-results"
-  }
+    allureResultsPath: "allure/allure-results",
+  },
 });
